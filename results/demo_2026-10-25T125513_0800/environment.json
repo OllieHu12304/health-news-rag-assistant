@@ -1,0 +1,38 @@
+{
+  "created_at": "2026-10-25T12:55:45+08:00",
+  "seconds": 28.16,
+  "model": {
+    "model_id": "mlx-community/Qwen2.5-3B-Instruct-4bit",
+    "revision": "4f83f8f146fdf28b512a06562b671d7af4fab457",
+    "config_sha256": "ceb97c46fe17f523ac42c0f0254fd18d9589f8725f0bbbe0bef541f8ef84547a",
+    "temperature": 0.0,
+    "seed": 42,
+    "conversion": "OpenCC s2twp",
+    "adapter": null
+  },
+  "index": {
+    "created_at": "2026-10-25T12:54:08+08:00",
+    "count": 30,
+    "model_id": "intfloat/multilingual-e5-small",
+    "revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+    "max_tokens": 512,
+    "pooling": "attention-mask mean",
+    "normalization": "L2",
+    "query_prefix": "query: ",
+    "passage_prefix": "passage: ",
+    "corpus_sha256": "7f230b8e9732482de29e1e356333b6e8f4219d460b272d126dfd3f6b157a0477",
+    "dimension": 384
+  },
+  "python": "3.13.9",
+  "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+  "packages": {
+    "mlx": "0.32.4",
+    "mlx-lm": "0.32.2",
+    "transformers": "5.20.2",
+    "torch": "2.14.1",
+    "numpy": "2.5.4",
+    "streamlit": "1.66.1",
+    "requests": "2.34.2",
+    "beautifulsoup4": "4.15.0"
+  }
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "query": "吃飯速度與減重有什麼關係？上班族可以怎麼調整？",
+    "expected_top_id": 12,
+    "actual_ids": [
+      12,
+      3,
+      7
+    ],
+    "scores": [
+      0.880657,
+      0.866584,
+      0.864176
+    ],
+    "pass": true
+  },
+  {
+    "query": "低 FODMAP 飲食的目的與執行方式是什麼？",
+    "expected_top_id": 20,
+    "actual_ids": [
+      20
+    ],
+    "scores": [
+      0.886325
+    ],
+    "pass": true
+  },
+  {
+    "query": "怎麼維修汽車引擎？",
+    "expected_top_id": null,
+    "actual_ids": [],
+    "scores": [],
+    "pass": true
+  }
+]

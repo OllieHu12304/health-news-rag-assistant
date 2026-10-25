@@ -1,0 +1,45 @@
+/* B 新聞研究工作台。st-key-* 對應 app.py 的 container key，避免影響其他頁面。 */
+:root{--workbench-ink:#20342e;--workbench-muted:#526457;--workbench-green:#176857;--workbench-line:#d8e1d5;--workbench-ground:#f3f5ef}
+.stApp{background:var(--workbench-ground);color:var(--workbench-ink)}
+[data-testid="stMainBlockContainer"]{padding:4.5rem 2rem 3rem;max-width:1580px}
+[data-testid="stHeader"]{background:var(--workbench-ground)}
+[data-testid="stSidebar"]{background:#e9efe5;border-right:1px solid var(--workbench-line)}
+[data-testid="stSidebarContent"]{padding-top:1rem}
+[data-testid="stSidebar"] [data-testid="stButton"] button{width:100%;justify-content:flex-start;text-align:left;border-radius:7px;min-height:42px}
+[data-testid="stSidebar"] [data-testid="stButton"] button p{text-align:left;font-size:13px;line-height:1.5}
+[data-testid="stSidebar"] h2{font-size:17px;letter-spacing:0;margin-top:0}
+[data-testid="stSidebar"] h3{font-size:14px;letter-spacing:0}
+.workbench-header{display:flex;justify-content:space-between;align-items:center;gap:20px;background:white;border-bottom:1px solid var(--workbench-line);padding:22px 24px;margin-bottom:8px}
+.brand-group{display:flex;align-items:center;gap:13px;min-width:0}.brand-group svg,.brand-group img{width:30px;height:30px;stroke:var(--workbench-green);stroke-width:1.5;fill:none;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.workbench-header h1{font-size:20px;font-weight:650;letter-spacing:-.02em;margin:0;padding:0;line-height:1.5;white-space:nowrap}
+.brand-group>span,.workbench-header>p{font-size:12px;color:var(--workbench-muted);margin:0;line-height:1.6}.workbench-header>p{white-space:nowrap}
+.st-key-conversation_panel{padding:10px 28px 26px 8px}
+.st-key-conversation_panel h2{font-size:20px;letter-spacing:-.01em;padding-top:.4rem;padding-bottom:.2rem}
+.question-block{border-bottom:1px solid var(--workbench-line);padding:16px 0 24px;margin-bottom:8px}.question-block>p{font-size:12px;color:var(--workbench-muted);margin:0 0 10px}.question-block>h3{font-size:21px;font-weight:600;line-height:1.6;letter-spacing:-.015em;margin:0;padding:0;overflow-wrap:anywhere}
+.st-key-conversation_panel [data-testid="stChatMessage"]{background:transparent;padding:14px 0 10px;gap:12px;border:0}
+.st-key-conversation_panel [data-testid="stChatMessageContent"]{min-width:0}
+.st-key-conversation_panel [data-testid="stChatMessageContent"] p,.st-key-conversation_panel [data-testid="stChatMessageContent"] li{font-size:15px;line-height:1.85}
+.st-key-conversation_panel [data-testid="stChatMessageContent"] h3{font-size:18px;line-height:1.6}
+.st-key-conversation_panel [data-testid="stChatMessageAvatarAssistant"]{background:#e0ebdf;color:var(--workbench-green)}
+.st-key-evidence_panel{background:white;border-left:1px solid var(--workbench-line);padding:22px 24px;min-height:640px}
+.st-key-evidence_panel h3{font-size:17px;letter-spacing:0;line-height:1.5;margin:0;padding:0}
+.st-key-evidence_panel p{font-size:13px;line-height:1.8}
+.source-heading{padding:1px 0 5px;overflow-wrap:anywhere}.source-heading a{font-size:14px;font-weight:550;line-height:1.8;color:#175641;text-underline-offset:4px}.source-heading a:hover{color:#0b3c2e}.source-number{font-size:11px;font-weight:650;color:#45684e;font-variant-numeric:tabular-nums;margin-right:8px}
+.source-heading p{font-size:11px!important;color:var(--workbench-muted);margin:10px 0 5px;line-height:1.7}
+.st-key-evidence_panel [data-testid="stExpander"]{border:1px solid var(--workbench-line);border-radius:7px}
+.st-key-evidence_panel [data-testid="stExpander"] summary p{font-size:12px}
+.st-key-inline_citations [data-testid="stExpander"]{border-color:var(--workbench-line);border-radius:7px}
+.st-key-inline_citations p,.st-key-inline_citations li{font-size:12px;line-height:1.8}
+.st-key-composer{padding-top:18px;border-top:1px solid var(--workbench-line);margin-top:6px}
+.st-key-composer [data-testid="stChatInput"]{border:1px solid #aebfac;border-radius:12px;background:white}
+.st-key-composer textarea{font-size:14px;line-height:1.6;caret-color:var(--workbench-green)}
+.st-key-composer [data-testid="stCheckbox"] label p{font-size:13px}
+.st-key-composer [data-testid="stCaptionContainer"] p{font-size:12px}
+[data-testid="stCaptionContainer"] p{color:var(--workbench-muted);line-height:1.7}
+.st-key-empty_state{padding:22px 0 28px}.st-key-empty_state h3{font-size:28px;line-height:1.5;font-weight:550;letter-spacing:-.02em;max-width:20ch}.st-key-empty_state p{font-size:14px;line-height:1.8;max-width:46ch}.st-key-empty_state [data-testid="stButton"] button{min-height:46px;text-align:left;justify-content:flex-start;background:white;border:1px solid var(--workbench-line)}
+button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #428475!important;outline-offset:3px}
+::selection{background:#c5ddcf;color:#153a2c}
+/* 僅讓工作台這一組 columns 在窄螢幕堆疊；不影響其他原生水平元件。 */
+@media(max-width:1050px){.st-key-conversation_panel{padding-right:14px}.st-key-evidence_panel{padding:20px 16px}.brand-group>span{display:none}}
+@media(max-width:850px){.st-key-workbench [data-testid="stHorizontalBlock"]{flex-direction:column;gap:24px}.st-key-workbench [data-testid="stColumn"]{width:100%!important;flex:1 1 100%!important;min-width:0!important}.st-key-evidence_panel{border-left:0;border-top:1px solid var(--workbench-line);min-height:0;padding:22px}.st-key-conversation_panel{padding:8px 4px 12px}}
+@media(max-width:600px){[data-testid="stMainBlockContainer"]{padding:4rem 1rem 2rem}.workbench-header{padding:15px 12px;gap:10px}.workbench-header h1{font-size:17px}.brand-group{gap:8px}.brand-group svg,.brand-group img{width:25px;height:25px}.workbench-header>p{font-size:11px}.question-block>h3{font-size:18px}.st-key-conversation_panel [data-testid="stChatMessageContent"] p,.st-key-conversation_panel [data-testid="stChatMessageContent"] li{font-size:14px;line-height:1.85}.st-key-empty_state h3{font-size:25px}.st-key-evidence_panel{padding:20px 16px}}

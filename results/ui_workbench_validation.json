@@ -1,0 +1,29 @@
+{
+  "checked_at": "2026-10-25T13:32:10+08:00",
+  "direction": "B 新聞研究工作台",
+  "tests_passed": 14,
+  "mechanical_detector": [],
+  "desktop_css_viewport": [
+    1440,
+    1000
+  ],
+  "mobile_css_viewport": [
+    390,
+    844
+  ],
+  "mobile_scroll_width": 390,
+  "live_model_turns": 3,
+  "live_retrieval_flags": [
+    true,
+    true,
+    false
+  ],
+  "live_source_counts": [
+    3,
+    1,
+    4
+  ],
+  "ui_review_disposition": "ship",
+  "screenshots": "ui_workbench_screenshots/",
+  "scope": "UI display and navigation only; retrieval/model behavior unchanged"
+}

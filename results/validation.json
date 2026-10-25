@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-10-25T13:01:37+08:00",
+  "tests": 13,
+  "unit_and_streamlit_tests": "passed",
+  "articles": 30,
+  "summaries": 30,
+  "vector_shape": [
+    30,
+    384
+  ],
+  "formal_demo": "demo_2026-10-25T125614_0800",
+  "demo_turns": 3,
+  "retrieval_flags": [
+    true,
+    true,
+    false
+  ],
+  "ui_review": "ship: desktop and 390 CSS px mobile",
+  "mobile_metrics": {
+    "innerWidth": 390,
+    "scrollWidth": 390,
+    "user_browser_zoom_preserved": true
+  },
+  "quality_limits": "See quality_review.md; factual errors remain possible and observed failures are preserved."
+}

@@ -1,0 +1,10 @@
+[project]
+name = "nlp-hw3-health-rag"
+version = "0.1.0"
+description = "地端健康新聞摘要、向量檢索與多輪問答"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+  "mlx-lm==0.32.2", "mlx==0.32.4", "transformers==5.20.2",
+  "torch>=2.8", "numpy>=2.0", "requests>=2.32", "beautifulsoup4>=4.13",
+  "streamlit>=1.50", "opencc-python-reimplemented>=0.1.7",
+]

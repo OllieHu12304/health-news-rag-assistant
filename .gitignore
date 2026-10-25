@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+models/
+data/
+results/chat_sessions*
+
+# 本機執行／開發產物
+*.log
+.superpowers/
+.env
+.env.*
+!.env.example
+
+# 介面比較原型另存 design/ui-prototype 分支，正式主分支只保留選定實作
+ui_prototype/
